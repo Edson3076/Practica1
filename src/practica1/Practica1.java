@@ -28,7 +28,20 @@ public class Practica1 {
             switch(seleccion){
                 case 1: crear.menu();
                         seleccion=crear.getSeleccion();
-                        
+                        switch(seleccion){
+                            case 1: System.out.println("\n-----Creacion de nueva Computadora Portatil-----");
+                                    dispositivo.dispositivo_nuevo();
+                                break;
+                            case 2: System.out.println("\n-----Creacion de una nueva Tablet-----");
+                                    dispositivo.dispositivo_nuevo();
+                                break;
+                            case 3: System.out.println("\n-----Creacion de nuevo SmartWatch------");
+                                    dispositivo.dispositivo_nuevo();
+                                break;
+                            case 4: System.out.println("\n-----Creacion de nuevo Smartphone-----");
+                                    dispositivo.dispositivo_nuevo();
+                                break;
+                            }
                     break;
                 case 2: 
                     break;
