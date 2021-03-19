@@ -34,7 +34,6 @@ public class Crear extends Ecosistema{
                     
                 break;
             case 4: pedir_datos();
-                    ingresar_valor();
                 break;
             case 5: mostrar_dispositivos();
                 break;
@@ -50,6 +49,7 @@ public class Crear extends Ecosistema{
             System.out.print("Ingrese el numero telefonico: ");
             numero_tel=entrada.nextInt();
         }
+        entrada.nextLine();
         System.out.print("Ingrese el correo electronico: ");
         correo= entrada.nextLine();
         System.out.print("Ingrese el nombre del dispositivo: ");
@@ -92,15 +92,11 @@ public class Crear extends Ecosistema{
                 System.out.println(i+1 +" "+lista_dispositivos.get(i));
                 
             }
-        System.out.print("Seleccione un dispositivo para conectar: ");
-        seleccion=entrada.nextInt();
-        // pendiente de mostrar con el dispositivo conectado
-        for(int i=0; i<=seleccion; i++){
+        System.out.print("\nSeleccione un dispositivo para conectar: ");
+        int seleccion1=entrada.nextInt();
+        // Conexion de auricular con el dispositivo seleccionado
+        System.out.println("Conexion establecida con: "+lista_dispositivos.get(seleccion1-1));
             
-        }
-            System.out.println("Conexion establecida con: ");
-        
-           
         }
         
     }
