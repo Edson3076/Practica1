@@ -22,11 +22,11 @@ public class Administrar extends Crear{
         switch(seleccion){
             case 1: administrar();
                 break;
-            case 2: 
+            case 2: administrar();
                 break;
-            case 3: 
+            case 3: administrar();
                 break;
-            case 4:
+            case 4: administrar();
                 break;
             case 5:
                 break;
